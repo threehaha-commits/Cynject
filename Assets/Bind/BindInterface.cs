@@ -2,10 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public static class BindInterface<T>
+namespace Threehaha
 {
-    public static List<T> Get(bool includeInactive = false)
+    public static class BindInterface<T>
     {
-        return Object.FindObjectsOfType<MonoBehaviour>(includeInactive).OfType<T>().ToList();
+        public static List<T> Get(bool includeInactive = false)
+        {
+            return Object.FindObjectsOfType<MonoBehaviour>(includeInactive).OfType<T>().ToList();
+        }
     }
 }

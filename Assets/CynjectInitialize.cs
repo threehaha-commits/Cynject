@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using Threehaha;
+using UnityEngine;
+
 
 public class CynjectInitialize : MonoBehaviour
 {
     private void Awake()
     {
         Container.Clear();
-        CInjectHelper.GetGameObjectsFromScene(true);
+        CInjectHelper.GetObjectsFromScene(true);
         
         CallPreInitialize();
 

@@ -1,4 +1,4 @@
-public class ClassB : CustomBehaviour
+public class ClassB : Parent
 {
     [Inject] public ClassA a;
 }

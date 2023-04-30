@@ -1,4 +1,5 @@
 using System.Collections;
+using Threehaha;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -9,8 +10,8 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
-            Fabric.Create(B);
             yield return new WaitForSeconds(1f);
+            Create.New(B);
         }
     }
 }
